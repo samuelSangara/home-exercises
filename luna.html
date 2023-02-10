@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .center {
+          position: absolute;
+          margin:  auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100px;
+          height: 100px;
+          background-image: url(./images/Screenshot_20210420-195908_Pixomatic.jpg);
+          border-radius: 50%;
+          box-shadow: 2px 15px 10px 30px green;
+          transform: rotate(130deg);
+          z-index: -1;
+          animation-duration: 1s;
+          animation-name: wave;
+          animation-iteration-count: infinite;
+          transform-origin:10% 10%;
+          animation-timing-function: linear;
+        }
+        @keyframes wave {
+            10% {
+              transform: rotate(110deg);
+            }
+            20% {
+              transform: rotate(130deg);
+            }
+            30% {
+              transform: rotate(110deg);
+            }
+            40% {
+              transform: rotate(130deg);
+            }
+          }
+      
+      </style>
+      <div class="center"></div> 
+</body>
+</html>

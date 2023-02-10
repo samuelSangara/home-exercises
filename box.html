@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+            box-shadow: 2px 4px 5px 5px;
+        }
+        .box1{
+            background-color: red;
+            position: relative;
+        }
+        .box2{
+            background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    z-index: 1;
+        }
+        p{
+           float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>hello world </h2>
+    </header>
+    <main>
+        <div class="box1">
+        </div>
+        <div class="box2">
+
+            <p>hi here i'm a blue color</p>
+        </div>
+    </main>
+</body>
+</html>

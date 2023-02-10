@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 50px;
+        background-color: salmon;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+          
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 10px;
+
+          transform: rotate(0deg);
+          z-index: -1;
+          animation-duration: 5s;
+          animation-name: wave;
+          animation-iteration-count: infinite;
+          transform-origin:10% 0%;
+          animation-timing-function: linear;
+
+          box-shadow: 4px 5px 6px 2px greenyellow;
+        
+    }
+    @keyframes wave {
+            60% {
+              transform: rotate(0deg);
+            }
+            10% {
+              transform: rotate(30deg);
+            }
+            30% {
+              transform: rotate(110deg);
+            }
+            40% {
+              transform: rotate(130deg);
+            }
+          } 
+    h3{
+        padding: 0px;
+    }
+.box{
+    position: absolute;
+    text-align: center;
+}
+</style>
+<body>
+    <a href="https://facebook.com">facebook</a>
+    <div class="box">
+        <h3>This is sam's page!</h3>
+    </div>
+</body>
+</html>
